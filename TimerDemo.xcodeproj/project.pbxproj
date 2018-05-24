@@ -14,6 +14,8 @@
 		E853B5FA20B74637000AD77E /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853B5F920B74637000AD77E /* TimelineViewController.swift */; };
 		E853B5FD20B74649000AD77E /* Transport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E853B5FB20B74649000AD77E /* Transport.storyboard */; };
 		E853B60020B74659000AD77E /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E853B5FE20B74659000AD77E /* Timeline.storyboard */; };
+		E853B60C20B74C91000AD77E /* Notification.NameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853B60B20B74C91000AD77E /* Notification.NameExtension.swift */; };
+		E853B60E20B75D89000AD77E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853B60D20B75D89000AD77E /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E853B5F920B74637000AD77E /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E853B5FC20B74649000AD77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Transport.storyboard; sourceTree = "<group>"; };
 		E853B5FF20B74659000AD77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timeline.storyboard; sourceTree = "<group>"; };
+		E853B60B20B74C91000AD77E /* Notification.NameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.NameExtension.swift; sourceTree = "<group>"; };
+		E853B60D20B75D89000AD77E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		E853B60A20B74B97000AD77E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E853B60D20B75D89000AD77E /* StringExtension.swift */,
+				E853B60B20B74C91000AD77E /* Notification.NameExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -224,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E853B60C20B74C91000AD77E /* Notification.NameExtension.swift in Sources */,
 				E853B5F820B74624000AD77E /* TransportViewController.swift in Sources */,
+				E853B60E20B75D89000AD77E /* StringExtension.swift in Sources */,
 				E853B5E820B745E2000AD77E /* AppDelegate.swift in Sources */,
 				E853B5FA20B74637000AD77E /* TimelineViewController.swift in Sources */,
 			);

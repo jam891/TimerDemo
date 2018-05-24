@@ -46,6 +46,9 @@
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>
+                                            <connections>
+                                                <action selector="mode:" target="Txq-5R-xVg" id="EjR-zo-0Uh"/>
+                                            </connections>
                                         </popUpButton>
                                     </subviews>
                                     <constraints>
@@ -72,6 +75,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="stop:" target="Txq-5R-xVg" id="keW-8W-Kol"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-DX-ZJ5">
                                         <rect key="frame" x="57" y="-7" width="65" height="32"/>
@@ -79,6 +85,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="play:" target="Txq-5R-xVg" id="Kdh-YE-1mV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <visibilityPriorities>
@@ -98,6 +107,11 @@
                             <constraint firstItem="XkW-bh-1Jd" firstAttribute="centerY" secondItem="NaM-uj-5Ft" secondAttribute="centerY" id="qpt-3J-UOw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="display" destination="WCU-OA-nhV" id="QwD-Hf-T9I"/>
+                        <outlet property="playButton" destination="Tfe-DX-ZJ5" id="rRo-qL-v49"/>
+                        <outlet property="stopButton" destination="dMD-pi-Z1h" id="LGD-Ne-Tna"/>
+                    </connections>
                 </viewController>
                 <customObject id="HJ8-J5-n4d" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

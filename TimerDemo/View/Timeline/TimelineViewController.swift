@@ -12,7 +12,48 @@ class TimelineViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        setup()
+    }
+    
+}
+
+
+// MARK: - Private
+
+private extension TimelineViewController {
+    
+    func setup() {
+        registeredNotification()
+    }
+    
+    func registeredNotification() {
+        NotificationCenter.addObserver(self,
+                                       selector: #selector(playButtonStateDidChange),
+                                       name: .playButtonStateDidChangeNotification,
+                                       object: nil)
+        
+        NotificationCenter.addObserver(self,
+                                       selector: #selector(stopButtonStateDidChange),
+                                       name: .stopButtonStateDidChangeNotification,
+                                       object: nil)
+    }
+    
+}
+
+
+// MARK: - Notification
+
+@objc
+extension TimelineViewController {
+    
+    func playButtonStateDidChange(_ notification: Notification) {
+        guard let _ = notification.object as? NSButton else { return }
+        
+    }
+    
+    func stopButtonStateDidChange(_ notification: Notification) {
+        guard let _ = notification.object as? NSButton else { return }
+        
     }
     
 }
